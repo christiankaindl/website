@@ -19,19 +19,14 @@
     <!-- Thanks to https://gethead.info/ for supplying everything that can go into the HEAD -->
     <title>Christian Kaindl</title>
     <style media="screen">
-      html {
-        min-height: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      @supports (display: grid) {
-        html {
-          display: grid;
-          align-items: center;
-        }
+      * {
+        box-sizing: border-box;
       }
       body {
-        margin-bottom: 8rem;
+        width: 100%;
+        max-width: 32rem;
+        margin: 20vh auto 3em;
+        padding: 1em;
       }
       .intro {
         font-size: 2rem;
@@ -43,20 +38,68 @@
         padding-left: 0;
         font-size: 1.2rem;
       }
+      .social-media > li {
+        display: inline-block;
+      }
       .social-media a {
+        display: inline-block;
+        margin: 0.1rem 0;
         color: black;
+        padding: 0.4em 0.8em;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      article p {
+        margin: 2em 0 0 0;
+      }
+      article p + p {
+        margin: 0;
+        text-indent: 1em;
+      }
+      .spacer {
+        margin: 5.5rem 0;
       }
     </style>
   </head>
   <body>
-    <p class="intro">brb</p>
+    <h1 class="intro">Christian Kaindl</h1>
+    <p>
+      I write code, take photos and write about interesting topics.
+      <br />
+      You can find me in these places:
+    </p>
+
     <ul class="social-media">
-      <li> <a href="https://dev.to/christiankaindl">dev.to</a> </li>
-      <li> <a href="https://medium.com/@christiankaindl">medium.com</a> </li>
-      <li> <a href="https://github.com/christiankaindl">github.com</a> </li>
-      <li> <a href="https://unsplash.com/@christiankaindl">unsplash.com</a> </li>
-      <li> <a href="https://twitter.com/christiankaindl">twitter.com</a> </li>
+      <li> <a href="https://dev.to/christiankaindl">Dev.to</a> </li>
+      <li> <a href="https://medium.com/@christiankaindl">Medium</a> </li>
+      <li> <a href="https://github.com/christiankaindl">Github</a> </li>
+      <li> <a href="https://unsplash.com/@christiankaindl">Unsplash</a> </li>
+      <li> <a href="https://twitter.com/christiankaindl">Twitter</a> </li>
     </ul>
+    <p>
+      You can also write me an email
+    </p>
     <a href="mailto:crisscross.kaindl@outlook.de"> <img src="assets/mail.svg" alt="E-mail address"> </a>
+
+    <div class="spacer"></div>
+  
+    <p>
+      I know JavaScript very well. And CSS and HTML.
+    </p>
+    <p>
+      I am working on <a href="https://www.quantargo.com/">Quantargo</a>.
+    </p>
+    <p>
+      My pictures on Unsplash have more than 2 Million views.
+    </p>
+    <p>
+      I work on Flamous Music - <a href="https://www.flamous.io/">flamous.io</a>
+    </p>
+    <p>
+      I love design and also Progressive Web Apps (PWAs)
+    </p>
+    <p>
+      I wrote a little WebExtension (currently Firefox only) that is useful for people who use Trello and has more than 1000 active uesrs - <a href="https://addons.mozilla.org/en-US/firefox/addon/trello-super-powers/">Trello Super Powers</a>
+    </p>
   </body>
 </html>
