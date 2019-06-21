@@ -22,11 +22,20 @@
       * {
         box-sizing: border-box;
       }
+      :root {
+        color-scheme: light dark;
+      }
       body {
         width: 100%;
         max-width: 32rem;
         margin: 20vh auto 3em;
         padding: 1em;
+      }
+      @media (preferes-color-scheme: dark) {
+        .body {
+          background-color: black;
+          color: #fafafa;
+        }
       }
       a {
         color: #007AFF;
